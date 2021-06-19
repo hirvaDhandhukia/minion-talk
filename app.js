@@ -17,27 +17,29 @@ var outputDiv = document.querySelector("#output");
 
 // var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
-var serverURL = "https://api.funtranslations.com/translate/pig-latin.json"
+var serverURL = "https://api.funtranslations.com/translate/minion.json"
+
 
 function getTranslationURL(input) {
     return serverURL + "?" + "text=" + input
 }
 
+//what to do when error happens
 function errorHandler(error) {
     console.log("error occured", error);
-    alert("someting wrong with the server! try again after some time")
+    alert("someting wrong with the server! It can take only 5 values per hour.")
 }
 
-
+// what to do when click happens
 function clickHandler() {
-    var inputText = txtInput.nodeValue;//taking input
+    var inputText = txtInput.value; //taking input
 
     //calling server for processing
     fetch(getTranslationURL(inputText))
-    .then(response => response.json())
+    .then(response => response.json()) // server is processing here
     .then(json => {
         var translatedText = json.contents.translated;
-        outputDiv.innerText = translatedText;
+        outputDiv.innerText = translatedText; // output
     })
     .catch(errorHandler)
 };
