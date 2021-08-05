@@ -6,6 +6,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     color: #1A1509;
+    background-color: #FFD55E;
     margin: 0;
     padding: 0;
 }
@@ -63,4 +64,15 @@ button {
 
 .text {
     padding-top: 10px;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    grid-gap: 10px;
+    column-gap: 10px;
+}
+
+img {
+    padding-top: 20%;
 }

@@ -10,15 +10,22 @@
 <body>
     <h1>Banana Translator</h1>
     
-    <textarea id="txt-input" 
-        placeholder="put your sentence in English here, and i will convert it into minion language"></textarea>
+    <div class="grids">
+        <div>
+            <textarea id="txt-input" 
+                placeholder="put your sentence in English here, and i will convert it into minion language"></textarea>
 
-    <div class="info">
-        <button id="btn-translate">Translate</button>
-        <div class="text">Output will come here 👇</div>
+            <div class="info">
+                <button id="btn-translate">Translate</button>
+                <div class="text">Output will come here 👇</div>
+            </div>
+        
+            <div id="output"></div>
+        </div>
+        <div>
+            <img src="img/minion.jpg" alt="minion-image">
+        </div>
     </div>
-
-    <div id="output"></div>
 
     <script src="app.js" type="text/javascript"></script>
 </body>
