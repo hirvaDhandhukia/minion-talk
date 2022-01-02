@@ -6,9 +6,10 @@
 * {
     font-family: 'Roboto', sans-serif;
     color: #1A1509;
-    background-color: #FFD55E;
+    /* background-color: #FFD55E; */
     margin: 0;
     padding: 0;
+    font-size: 1.3rem;
 }
 
 h1 {
@@ -48,11 +49,14 @@ textarea {
 }
 
 button {
-    background-color: #5E88FF;
-    border: 1px solid #1A1509;
+    /* background-color: #5E88FF; */
+    background-color: #FFD55E;
+    /* border: 1px solid #1A1509; */
+    border: 1.5px solid rgba(109, 109, 107, 0.904);
     border-radius: 5px;
-    color: white;
-    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
     text-transform: uppercase;
     display: inline-block;
     padding: 14px 24px;
@@ -64,15 +68,34 @@ button {
 
 .text {
     padding-top: 10px;
+    color: rgba(109, 109, 107, 0.904);
 }
 
-.grids {
+.container {
+    padding-top: 50px;
+}
+
+/* 
+.container {
     display: grid;
     grid-template-columns: 1fr 260px;
     grid-gap: 10px;
     column-gap: 10px;
-}
 
-img {
-    padding-top: 20%;
-}
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+} */
+
+/* img {
+    padding-top: 20%; 
+    max-width: 80%;  
+    height: auto;  
+} */
+
+/* media-query && flex-wrap for making the screen responsive */
+/* @media screen and (max-width: 800px) {
+    .container{
+        flex-wrap: wrap;
+    }
+} */
